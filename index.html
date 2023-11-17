@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Docs</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { background: rgb(25, 25, 41); display: flex; }
+            h1 { color: #fff; }
+            h2, h3, h4, h5, h6 { color: #8f8f8f; }
+            ul { width: 20vw; height: 100vh; background: #262136; }
+            ul > li { cursor: pointer; width: calc(20vw - 20px); margin-left: 10px; height: 35px; display: flex; align-items: center; background: #342e4a; border-radius: 10px; margin-top: 10px; padding-left: 10px; color: #fff; }
+            ul > li.openner::after { content: '>'; position: absolute; transform: translateX(calc(20vw - 20px * 2 - 15px)); font-family: Calibri; transition: .4s; }
+            ul > li.openner.open::after { content: '>'; position: absolute; transform: translateX(calc(20vw - 20px * 2 - 15px)) rotateZ(90deg); font-family: Calibri; transition: .4s; }
+            ul > li:not(.openner).open::after { content: '#'; position: absolute; transform: translateX(calc(20vw - 20px * 2 - 15px)) rotateZ(90deg); font-family: Calibri; transition: .4s; }
+            div.content { width: 80vw; }
+        </style>
+    </head>
+    <body>
+        <ul class="siderbar">
+            <li class="open">
+                Welcome
+            </li>
+        </ul>
+        <div class="content">
+            <center>
+                <img src="./docs.png">
+                <h1>Helcome to the LGrow documentation!</h1>
+                <h2>Here you can consult anything you have about LGrow!</h2>
+                <h3>Start now by clicking on any item on the side.</h3>
+                <h4>By. Lucas</h4>
+            </center>
+        </div>
+    </body>
+</html>
