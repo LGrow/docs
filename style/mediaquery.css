@@ -1,0 +1,44 @@
+@media screen and (max-width: 350px) {
+    menu {
+        width: 60vw !important;
+        position: fixed;
+        inset: 0;
+        left: -42vw !important;
+    }
+
+    menu.open {
+        position: fixed;
+        left: 0 !important;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.229);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    menu {
+        width: 50vw;
+        position: fixed;
+        inset: 0;
+        left: -28vw;
+    }
+
+    menu.open {
+        position: fixed;
+        left: 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.229);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    menu {
+        width: 40vw;
+        position: fixed;
+        inset: 0;
+        left: -28vw;
+    }
+
+    menu.open {
+        position: fixed;
+        left: 0;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.229);
+    }
+}
