@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+:root {
+    --pacifico: Pacifico;
+    --Quicksand: 'Quicksand';
+    --poppins: Poppins;
+}

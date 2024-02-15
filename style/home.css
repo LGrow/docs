@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('variables.css');
+
+section#home {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#home aside.img {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+section#home aside.img img {
+    width: 100vw;
+}
+
+section#home aside.container {
+    width: 100vw;
+}
+
+section#home aside.container h1 {
+    color: #8A5AA4;
+    font-family: var(--pacifico);
+    font-size: 5.5vh;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+section#home aside.container h2 {
+    color: rgb(177, 175, 175);
+    text-align: center;
+    font-family: var(--Quicksand);
+    font-size: 4.2vh;
+    margin-top: 3px;
+}
+
+section#home aside.container h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.5vh;
+    color: #9e9e9e;
+    font-family: var(--poppins);
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+    section#home aside.img img {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    section#home aside.container h1 {
+        font-size: 5.2vh;
+    }
+    
+    section#home aside.container h2 {
+        font-size: 3.4vh;
+    }
+    
+    section#home aside.container h3 {
+        font-size: 3.2vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    section#home {
+        height: max-content;
+    }
+
+    section#home aside.container h1 {
+        font-size: 3.8vh;
+    }
+    
+    section#home aside.container h2 {
+        font-size: 3vh;
+    }
+    
+    section#home aside.container h3 {
+        font-size: 2.6vh;
+    }
+}

@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Learn LGrow!!! :)">
-        <meta name="keywords" content="HTML,CSS,JavaScript">
-        <meta name="author" content="Heitor">
-        <link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/mediaquery.css">
-        <link rel="shortcut icon" href="favicon/LGrow.ico" type="image/x-icon">
-        <title>Docs</title>
-    </head>
-    <body>
-        
-        <div class="lido"></div>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the LGrow programming language :)">
+    <link rel="shortcut icon" href="favicon/LGrow.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/variables.css">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/body.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <title>LGrow</title>
+</head>
+<body>
+    <div class="lido"></div>
+    <menu id="menu">
+        <div class="arrow">
+            <span class="arrowOpen" onclick="openMenu()">⇥</span>
+            <span class="arrowClose" onclick="closeMenu()">⇤</span>
+        </div>
+        <nav id="nav">
+            <button id="home" class="marked">Welcome <span></span></button>
+        </nav>
+    </menu>
+    <main>
+        <section id="home">
+            <aside class="img">
+                <img src="pictures/docs.png" alt="Pamonho">
+            </aside>
+            <aside class="container">
+                <h1>Welcome to the LGrow documentation!</h1>
+                <h2>Here you can consult anything you have about LGrow!</h2>
+                <h3>Start now by clicking on any item on the side.</h3>
+            </aside>
+        </section>
+    </main>
 
-        <menu>
-            <div class="arrow"><span class="arrowClose" onclick="closeMenu()">⇤</span></div>
-            <div class="arrow"><span class="arrowOpen" onclick="openMenu()">⇥</span></div>
-            <nav>
-                <button id="home" class="marked nav" onclick="this.classList.add('marked'); welcome()">Welcome <span></span></button>
-            </nav>
-        </menu>
-        
-        <main>
-            <section id="home">
-                <aside>
-                    <img src="pictures/docs.png" alt="imagem de um rato lendo a documentação do LGrow">
-                    <h1>Welcome to the LGrow documentation!</h1>
-                    <h2>Here you can consult anything you have about LGrow!</h2>
-                    <h3>Start now by clicking on any item on the side.</h3>
-                </aside>
-            </section>
-
-        </main>
-
-        <script src="js/script.js"></script>
-        <script src="js/menu.js"></script>
-        <script src="js/scroll.js"></script>
-    </body>
+    <script src="js/menu.js"></script>
+</body>
 </html>
