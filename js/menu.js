@@ -6,6 +6,7 @@ var nav = document.getElementById("nav");
 function openMenu() {
     menu.classList.toggle("enabled");
     arrowOpen.style.opacity = "0";
+    nav.style.display = "flex";
     setTimeout(() => {
         arrowOpen.style.display = "none";
         arrowClose.style.display = "inline-flex";
@@ -22,5 +23,6 @@ function closeMenu() {
         arrowClose.style.display = "none";
         arrowOpen.style.display = "inline-flex";
         arrowOpen.style.opacity = "1";
+        nav.style.display = "none";
     }, 400)
 }
