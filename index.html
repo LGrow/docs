@@ -20,7 +20,8 @@
             <span class="arrowClose" onclick="closeMenu()">⇤</span>
         </div>
         <nav id="nav">
-            <button id="home" class="marked">Welcome <span></span></button>
+            <button id="home" class="button marked" onclick="var btn = this; var section = 0; mark(btn, section); document.body.scrollIntoView();">Welcome <span></span></button>
+            <button id="" class="button" onclick="var btn = this; var section = 1; mark(btn, section);">#unicode# <span></span></button>
         </nav>
     </menu>
     <main>
@@ -34,6 +35,8 @@
                 <h3>Start now by clicking on any item on the side.</h3>
             </aside>
         </section>
+
+        <section id="teste"></section>
     </main>
 
     <script src="js/menu.js"></script>
