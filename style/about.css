@@ -8,7 +8,6 @@ section#about {
 section#about aside.pamunho {
     width: 80vw;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: auto;
@@ -42,6 +41,12 @@ section#about aside.pamunho img {
     Desktops, large screens – 1025px — 1200px.
     Extra large screens, TV – 1201px, and more.
 */
+
+@media only screen and (max-width: 760px) {
+    section#about {
+        height: max-content;
+    }
+}
 
 @media only screen and (min-width: 760px) {
     section#about aside.pamunho img {

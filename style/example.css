@@ -101,6 +101,7 @@ section#example aside.description p {
     margin: auto;
     line-height: 1.4em;
     margin-top: 25px;
+    padding-bottom: 25px;
 }
 
 /* 
@@ -110,3 +111,10 @@ section#example aside.description p {
     Desktops, large screens – 1025px — 1200px.
     Extra large screens, TV – 1201px, and more.
 */
+
+@media only screen and (max-width: 760px) {
+    section#about {
+        height: max-content;
+        padding-bottom: 25px;
+    }
+}
