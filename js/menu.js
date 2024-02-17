@@ -40,20 +40,50 @@ function closeMenu() {
 
 document.addEventListener("scroll", () => {
     closeMenu();
+    var h = document.documentElement,
+        b = document.body,
+        st = 'scrollTop',
+        sh = 'scrollHeight';
+
+    var percent = (h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight) * 100;
+
+    change(percent);
 });
 
-// Marked?
-
-let sections = ["home", "teste"];
+let sections = ["home", "about", "segundo"];
 
 var marked = document.querySelector("button.marked");
 
-function mark(btn, section) {
-    marked.classList.remove("marked");
+function home(btn) {
+    document.getElementById("home").scrollIntoView();
+    mark(btn);
+}
 
+function about(btn) {
+    document.getElementById("about").scrollIntoView();
+    mark(btn);
+}
+
+function example(btn) {
+    document.getElementById("example").scrollIntoView();
+    mark(btn);
+}
+
+function mark(btn) {
+    marked.classList.remove("marked");
     btn.classList.add("marked");
     marked = document.querySelector("button.marked");
+}
 
-    document.getElementById(sections[section]).scrollIntoView();
-
+function change(percent) {
+    if (percent < 50) {
+        btn = document.querySelector("nav .button");
+        mark(btn);
+    } else if (percent >= 50 && percent < 89) {
+        btn = document.getElementById("segundo");
+        mark(btn);
+    } else if(percent >= 90) {
+        btn = document.getElementById("terceiro");
+        mark(btn);
+    }
 }

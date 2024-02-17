@@ -15,8 +15,14 @@
     src: url(../fonts/Poppins-Bold.ttf);
 }
 
+@font-face {
+    font-family: OperatorMono;
+    src: url(../fonts/OperatorMono-Medium.otf);
+}
+
 :root {
     --pacifico: Pacifico;
     --Quicksand: 'Quicksand';
     --poppins: Poppins;
+    --operator: OperatorMono;
 }

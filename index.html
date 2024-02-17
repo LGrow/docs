@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,11 @@
     <link rel="stylesheet" href="style/home.css">
     <link rel="stylesheet" href="style/body.css">
     <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/example.css">
     <title>LGrow</title>
 </head>
+
 <body>
     <div class="lido"></div>
     <menu id="menu">
@@ -20,8 +24,9 @@
             <span class="arrowClose" onclick="closeMenu()">⇤</span>
         </div>
         <nav id="nav">
-            <button id="home" class="button marked" onclick="var btn = this; var section = 0; mark(btn, section); document.body.scrollIntoView();">Welcome <span></span></button>
-            <button id="" class="button" onclick="var btn = this; var section = 1; mark(btn, section);">#unicode# <span></span></button>
+            <button class="button marked" onclick="var btn = this; home(btn);">Welcome <span></span></button>
+            <button id="segundo" class="button" onclick="var btn = this; about(btn);">About<span></span></button>
+            <button id="terceiro" class="button" onclick="var btn = this; example(btn);">Example<span></span></button>
         </nav>
     </menu>
     <main>
@@ -36,9 +41,54 @@
             </aside>
         </section>
 
-        <section id="teste"></section>
+        <section id="about">
+            <aside class="pamunho">
+                <h1>About</h1>
+                <img src="pictures/Pamunho.png" alt="Pamunho the LGrow mascot :)">
+                <p>This language was designed with the aim of making low-level programming simpler (removing assembly
+                    languages ​​from the low-level category). In it we will have clear inspirations in C, Go, Rust and
+                    C++. However, with the aim of making everything simpler, and for this we are creating our own
+                    ecosystem that also accepts contact with other ecosystems. LGrow will be a good choice, trust us!
+                </p>
+            </aside>
+        </section>
+
+        <section id="example">
+            <aside class="example">
+                <span class="tittle">
+                    <h2>A simple example</h2>
+                </span>
+
+                <aside class="code">
+                    <div class="center">
+                        <code> 
+                            <div>
+                                <div>
+                                    <span class="red"></span>
+                                    <span class="yellow"></span>
+                                    <span class="green"></span>
+                                </div>
+                            </div>
+<pre>
+<span>1</span>  #import std::"io"::*.?;
+<span>2</span>  
+<span>3</span>  fun main(): Void {
+<span>4</span>      cout << "Hello World!";
+<span>5</span>  }
+</pre>
+                        </code>
+                    </div>
+                </aside>
+
+                <aside class="description">
+                    <p>The project is simple but complex, an idea so easy on paper and difficult to execute... The project was fragmented into 2 stages, Initial Compiler and Final Compiler. The initial compiler is written in C, the final one will be written in LGrow. This will allow our project to be tested by ourselves at creation time. With this we will provide you with the best possible experience with LGrow and our multi-platform executable. We hope to see you again using our ecosystem! 💜</p>
+                </aside>
+            </aside>
+        </section>
+
     </main>
 
     <script src="js/menu.js"></script>
 </body>
+
 </html>

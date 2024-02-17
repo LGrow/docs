@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(variables.css);
 
 menu {
     background-color: #37324b;
@@ -139,10 +140,4 @@ menu nav button:hover {
     menu {
         display: none;
     }
-}
-
-section#teste {
-    height: 100vh;
-    width: 100vw;
-    background-color: #383150;
 }

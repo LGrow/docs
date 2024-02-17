@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+section#example {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+section#example aside.example {
+    width: 100vw;
+}
+
+section#example aside.example h2 {
+    font-family: var(--poppins);
+    font-size: 3em;
+    color: rgba(221, 219, 219, 0.856);
+}
+
+section#example aside.example aside.code {
+    width: 100vw;
+    margin-top: 20px;
+}
+
+section#example aside.example aside.code div code {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111A29;
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+section#example aside.example aside.code div code pre {
+    font-size: 1em;
+    line-height: 1.5em;
+    transform: translateX(-3%);
+    font-family: var(--operator);
+}
+
+section#example aside.example aside.code div code pre span {
+    color: #29384c;
+}
+
+section#example aside.example span.tittle {
+    display: block;
+    margin: auto;
+    width: 80vw;
+}
+
+section#example aside.example aside.code div code > div {
+    height: 35px;
+    width: 100%;
+    position: absolute;
+    inset: -1.5%;
+    left: 0;
+}
+
+section#example aside.example aside.code div.center {
+    display: flex;
+    justify-content: center;
+}
+
+section#example aside.example aside.code div code > div div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+    transform: translateX(10%);
+}
+
+section#example aside.example aside.code div code div span {
+    width: 20px;
+    display: flex;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+section#example aside.example aside.code div code div span.red {
+    background-color: #FB5F5A;
+}
+
+section#example aside.example aside.code div code div span.yellow {
+    background-color: #FCC025;
+}
+
+section#example aside.example aside.code div code div span.green {
+    background-color: #2ACA44;
+}
+
+
+section#example aside.description p {
+    font-family: var(--poppins);
+    font-size: 1.2em;
+    color: rgba(221, 219, 219, 0.856);
+    max-width: 80vw;
+    margin: auto;
+    line-height: 1.4em;
+    margin-top: 25px;
+}
+
+/* 
+    Mobile devices – 320px — 480px.
+    iPads, Tablets – 481px — 768px.
+    Small screens, laptops – 769px — 1024px.
+    Desktops, large screens – 1025px — 1200px.
+    Extra large screens, TV – 1201px, and more.
+*/
