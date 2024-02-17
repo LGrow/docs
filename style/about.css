@@ -20,6 +20,7 @@ section#about aside.pamunho h1 {
     font-size: 4em;
     color: rgba(221, 219, 219, 0.856);
     max-width: 80vw;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.187);
 }
 
 section#about aside.pamunho p {

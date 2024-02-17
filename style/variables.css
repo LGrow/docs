@@ -16,6 +16,11 @@
 }
 
 @font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
     font-family: OperatorMono;
     src: url(../fonts/OperatorMono-Medium.otf);
 }

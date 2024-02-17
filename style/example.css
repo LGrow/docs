@@ -15,6 +15,7 @@ section#example aside.example h2 {
     font-family: var(--poppins);
     font-size: 3em;
     color: rgba(221, 219, 219, 0.856);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.187);
 }
 
 section#example aside.example aside.code {
@@ -28,6 +29,7 @@ section#example aside.example aside.code div code {
     justify-content: center;
     align-items: center;
     background-color: #111A29;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
     width: 350px;
     height: 200px;
     border-radius: 10px;

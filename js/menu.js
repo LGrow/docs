@@ -50,8 +50,6 @@ document.addEventListener("scroll", () => {
     change(percent);
 });
 
-let sections = ["home", "about", "segundo"];
-
 var marked = document.querySelector("button.marked");
 
 function home(btn) {
